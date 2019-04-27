@@ -1,787 +1,629 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="ExploreIT: Personal Portfolio Template">
+    <meta name="keywords" content="bootweb, multipurpose, portfolio, personal, developer, designer, onepage, clean, minimal, modern, mahmudur, me">
+    <meta name="author" content="Mahmudur Rahman">
+    
+    <title>ExploreIT: Personal Portfolio</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- All CSS files -->
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootsnav -->
+    <link href="assets/css/bootsnav.css" rel="stylesheet">
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
+
+    <!-- Animation -->
+    <link href="assets/css/animate.css" rel="stylesheet">
+
+    <!-- Hover -->
+    <link href="assets/css/hover.css" rel="stylesheet">
+
     <!-- Owl Carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="css/animate.min.css">
-    <!-- Personal CSS -->
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <link rel="stylesheet" href="css/section-header.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Personal Style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
 
-    <title>ViewPoint</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML 5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
-    
-    <!-- Menu Starts -->
-    <div class="menu-wrap">
-      <input type="checkbox" class="toggler">
-      <div class="hamburger">
-        <div></div>
-      </div>
-      <div class="menu">
-        <div>
-          <div>
-            <ul class="text-uppercase">
-              <li><a href="index.html">Home</a></li>
-              <li><a data-scroll href="#about">About
-                <span class="text-uppercase about">
-                  team viewpoint
-                </span>
-              </a></li>
-              <li><a data-scroll href="#services">Services
-                <span class="text-uppercase services">what we provide</span>
-              </a></li>
-              <li><a data-scroll href="#team">Team
-                <span class="text-uppercase team">
-                  enthusiastic team
-                </span>
-              </a></li>
-              <li><a data-scroll href="#contact">Contact
-                <span class="text-uppercase contact">
-                  stay connected
-                </span>
-              </a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Menu Ends -->
 
-    <!-- Banner Starts -->
-    <div id="banner">
-      <div class="banner-overlay">
-        <div class="container banner-container">
-          <h1 class="text-uppercase mb-3">this is team <span>viewpoint</span></h1>
-          <h2 class="text-capitalize mb-4">We will provide Your thinking</h2>
-          <div class="scroll-down">
-            <a data-scroll href="#about">
-              <span></span>
+    <!-- Preloader -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+ 
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+ 
+    </div>
+    <!-- Preloader -->
+
+
+    <!-- Menu -->
+    <nav class="navbar navbar-default navbar-fixed navbar-scrollspy white no-background bootsnav">
+
+        <div class="container mine">      
+            <!-- Start Header Navigation -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    
+                    <img src="assets/img/logo.png" class="logo logo-display" alt="ExploreIT">
+                    <img src="assets/img/logo-white.png" class="logo logo-scrolled" alt="ExploreIT">
+
+                </a>
+            </div>
+            <!-- End Header Navigation -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right text-uppercase" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="active"><a href="#bg">Home</a></li>
+                    <li><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll href="#services">Services</a></li>
+                    <li><a data-scroll href="#works">Works</a></li>
+                    <li><a data-scroll href="#testimonial">Testimonial</a></li>
+                    <li><a data-scroll href="#contact">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>   
+    </nav>
+    <!-- Menu -->
+
+
+    <!-- Banner -->
+    <div class="bg bg-overlay" id="particles-js">
+      <div class="container" id="bg">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="bg-text text-center">
+              <h2 class="text-center"> Hey! This is Mehedi</h2>
+              <h4>
+                I Am
+                <span class="element">
+                  
+                </span>
+              </h4>
+            </div>
+            <a data-scroll href="#about" class="bouncing-icon wow animated infinite bounce">
+              <i class="fa fa-angle-double-down" aria-hidden="true"></i>
             </a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Banner Ends -->
+    <!-- Banner -->
 
-    <!-- About Starts -->
-    <div id="about">
+
+    <!-- About -->
+    <section class="about wow fadeInUp" id="about">
       <div class="container">
-          <div class="section-header">
-            <h2 class="text-uppercase">about
-              <span>team viewpoint</span>
-            </h2>
-          </div>
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-7 col-lg-7">
-            <div class="about-details">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laboriosam doloribus placeat distinctio perspiciatis? Officiis provident, corporis maxime deserunt illum et nostrum nesciunt natus non veritatis veniam ipsa? Recusandae, odit!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit atque modi voluptatum enim repellat iste qui incidunt ab doloribus animi doloremque aut rerum similique id exercitationem, hic omnis numquam iure.
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-5 col-lg-5">
-            <div class="image-container">
-              <img class="img-fluid" src="images/about.jpg"/>
-              <div class="after d-flex">
-                <span>ViewPoint</span>
-              </div>
-            </div>
-          </div>
+        <div class="sec-heading text-center">
+          <h2 class="area-title">About Me</h2>
+          <div class="separator"></div>
         </div>
-      </div>
-    </div>
-    <!-- About Ends -->
-
-    <!-- Services Starts -->
-    <div id="services">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="text-uppercase">services
-            <span>
-              what we provide
-            </span>
-          </h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-
-            <div class="row">
-
-              <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <div class="serviceBox">
-                  <div class="serviceBox-icon">
-                    <i class="fas fa-palette"></i>
-                  </div>
-                  <div class="serviceBox-text">
-                    <div class="serviceBox-title">
-                      <h3 class="text-uppercase">Graphic Design</h3>
-                    </div>
-                    <div class="serviceBox-des">
-                      <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dignissimos blanditiis error adipisci, dolores neque
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <div class="serviceBox">
-                  <div class="serviceBox-icon">
-                    <i class="fas fa-desktop"></i>
-                  </div>
-                  <div class="serviceBox-text">
-                    <div class="serviceBox-title">
-                      <h3 class="text-uppercase">web Design</h3>
-                    </div>
-                    <div class="serviceBox-des">
-                      <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dignissimos blanditiis error adipisci, dolores neque
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <div class="serviceBox">
-                  <div class="serviceBox-icon">
-                    <i class="fas fa-code"></i>
-                  </div>
-                  <div class="serviceBox-text">
-                    <div class="serviceBox-title">
-                      <h3 class="text-uppercase">web Devlopment</h3>
-                    </div>
-                    <div class="serviceBox-des">
-                      <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dignissimos blanditiis error adipisci, dolores neque
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <div class="serviceBox">
-                  <div class="serviceBox-icon">
-                    <i class="fab fa-slack"></i>
-                  </div>
-                  <div class="serviceBox-text">
-                    <div class="serviceBox-title">
-                      <h3 class="text-uppercase">logo Design</h3>
-                    </div>
-                    <div class="serviceBox-des">
-                      <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dignissimos blanditiis error adipisci, dolores neque
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <div class="serviceBox">
-                  <div class="serviceBox-icon">
-                    <i class="fas fa-comments-dollar"></i>
-                  </div>
-                  <div class="serviceBox-text">
-                    <div class="serviceBox-title">
-                      <h3 class="text-uppercase">marketing</h3>
-                    </div>
-                    <div class="serviceBox-des">
-                      <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dignissimos blanditiis error adipisci, dolores neque
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <div class="serviceBox">
-                  <div class="serviceBox-icon">
-                    <i class="fas fa-search-dollar"></i>
-                  </div>
-                  <div class="serviceBox-text">
-                    <div class="serviceBox-title">
-                      <h3 class="text-uppercase">seo</h3>
-                    </div>
-                    <div class="serviceBox-des">
-                      <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dignissimos blanditiis error adipisci, dolores neque
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-    <!-- Services Ends -->
-
-    <!-- How We Works Starts -->
-    <div id="how-works">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="text-uppercase">
-            How we Works
-            <span>procedure</span>
-          </h2>
-        </div>
-        <div class="row how-work-details text-center">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-            <div class="work-vdo">
-              <video controls autoplay>
-                <source src="videos/work.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-            <div class="work-item">
-              <h5 class="text-uppercase">
-                discuss & plan
-              </h5>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem alias quibusdam
-              </p>
-            </div>
-            <div class="work-arrow">
-              <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="work-item">
-              <h5 class="text-uppercase">
-                design & develop
-              </h5>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem alias quibusdam
-              </p>
-            </div>
-            <div class="work-arrow">
-              <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="work-item">
-              <h5 class="text-uppercase">
-                final approach
-              </h5>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem alias quibusdam
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> 
-    <!-- How We Works Ends -->
-
-    <!-- Team Starts -->
-    <div id="team">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="text-uppercase">
-            team
-            <span>enthusiastic team</span>
-          </h2>
-        </div>
-        <div class="row team-inner">
-          <div class="col-12">
-            <div class="owl-carousel team-carousel owl-theme">
-              <div class="item">
-                <div class="team-member">
-                  <img class="img-responsive" src="images/team-mehedi.jpg" alt="Mehedi">
-                  <div class="team-data">
-                    <h4 class="m-0 text-uppercase">Mahmudur Rahman</h4>
-                    <p>FrontEnd Developer</p>
-                  </div>
-                  <div class="member-overlay">
-                    <div class="overlay-border text-center">
-                      <h4 class="text-uppercase">Mahmudur Rahman</h4>
-                      <p>FrontEnd Developer</p>
-                      <p class="mt-5 text-justify">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem nisi beatae cumque vel voluptatum sapiente
-                      </p>
-                      <div class="team-social">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#" title="Google+"><i class="fab fa-google-plus-square"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="team-member">
-                  <img class="img-responsive" src="images/team-arif.jpg" alt="Sultan">
-                  <div class="team-data">
-                    <h4 class="m-0 text-uppercase">sultan arif</h4>
-                    <p>Sr.Graphic Designer</p>
-                  </div>
-                  <div class="member-overlay">
-                    <div class="overlay-border text-center">
-                      <h4 class="text-uppercase">sultan arif</h4>
-                      <p>Sr.Graphic Designer</p>
-                      <p class="mt-5 text-justify">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem nisi beatae cumque vel voluptatum sapiente
-                      </p>
-                      <div class="team-social">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#" title="Google+"><i class="fab fa-google-plus-square"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="team-member">
-                  <img class="img-responsive" src="images/team-naeem.jpg" alt="Naeem">
-                  <div class="team-data">
-                    <h4 class="m-0 text-uppercase">nuruzzaman naeem</h4>
-                    <p>Graphic Designer</p>
-                  </div>
-                  <div class="member-overlay">
-                    <div class="overlay-border text-center">
-                      <h4 class="text-uppercase">nuruzzaman naeem</h4>
-                      <p>Graphic Designer</p>
-                      <p class="mt-5 text-justify">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem nisi beatae cumque vel voluptatum sapiente
-                      </p>
-                      <div class="team-social">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#" title="Google+"><i class="fab fa-google-plus-square"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="team-member">
-                  <img class="img-responsive" src="images/team-monika.jpg" alt="Monika">
-                  <div class="team-data">
-                    <h4 class="m-0 text-uppercase">monika momi</h4>
-                    <p>Jr.Graphic Designer</p>
-                  </div>
-                  <div class="member-overlay">
-                    <div class="overlay-border text-center">
-                      <h4 class="text-uppercase">Monika momi</h4>
-                      <p>Jr.Graphic Designer</p>
-                      <p class="mt-5 text-justify">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem nisi beatae cumque vel voluptatum sapiente
-                      </p>
-                      <div class="team-social">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#" title="Google+"><i class="fab fa-google-plus-square"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="team-member">
-                  <img class="img-responsive" src="images/team-sozol.jpg" alt="Sozol">
-                  <div class="team-data">
-                    <h4 class="m-0 text-uppercase">sozol islam</h4>
-                    <p>Jr.Graphic Designer</p>
-                  </div>
-                  <div class="member-overlay">
-                    <div class="overlay-border text-center">
-                      <h4 class="text-uppercase">sozol islam</h4>
-                      <p>Jr.Graphic Designer</p>
-                      <p class="mt-5 text-justify">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem nisi beatae cumque vel voluptatum sapiente
-                      </p>
-                      <div class="team-social">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#" title="Google+"><i class="fab fa-google-plus-square"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="team-member">
-                  <img class="img-responsive" src="images/team-shakila.jpg" alt="Moin">
-                  <div class="team-data">
-                    <h4 class="m-0 text-uppercase">shakila sultana</h4>
-                    <p>Graphic Designer</p>
-                  </div>
-                  <div class="member-overlay">
-                    <div class="overlay-border text-center">
-                      <h4 class="text-uppercase">shakila sultana</h4>
-                      <p>Graphic Designer</p>
-                      <p class="mt-5 text-justify">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem nisi beatae cumque vel voluptatum sapiente
-                      </p>
-                      <div class="team-social">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#" title="Google+"><i class="fab fa-google-plus-square"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="team-member">
-                  <img class="img-responsive" src="images/team-honey.jpg" alt="Shuvo">
-                  <div class="team-data">
-                    <h4 class="m-0 text-uppercase">umme honey</h4>
-                    <p>Graphic Designer</p>
-                  </div>
-                  <div class="member-overlay">
-                    <div class="overlay-border text-center">
-                      <h4 class="text-uppercase">arifur rahman</h4>
-                      <p>Jr.Graphic Designer</p>
-                      <p class="mt-5 text-justify">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem nisi beatae cumque vel voluptatum sapiente
-                      </p>
-                      <div class="team-social">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#" title="Google+"><i class="fab fa-google-plus-square"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Team Ends -->
-
-    <!-- Testimonial Starts -->
-    <div id="testimonial">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="text-uppercase">
-            testimony
-            <span>what clients say</span>
-          </h2>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="owl-carousel testimonial_item owl-theme">
-
-              <div class="item">
-                <div class="testimony-item p-4">
-                  <div class="client-img">
-                    <img class="img-fluid" src="images/client-1.jpeg" alt="Client">
-                  </div>
-                  <div class="star d-inline-block">
-                    <ul>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                    </ul>
-                  </div>
-                  <h5 class="text-uppercase">
-                    Nathan Pyper
-                  </h5>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum sit, pariatur et repudiandae nihil fugiat quam porro non eum.</p>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="testimony-item p-4">
-                  <div class="client-img">
-                    <img class="img-fluid" src="images/client-2.jpeg" alt="Client">
-                  </div>
-                  <div class="star d-inline-block">
-                    <ul>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                    </ul>
-                  </div>
-                  <h5 class="text-uppercase">
-                    William Howell
-                  </h5>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum sit, pariatur et repudiandae nihil fugiat quam porro non eum.</p>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="testimony-item p-4">
-                  <div class="client-img">
-                    <img class="img-fluid" src="images/client-3.jpeg" alt="Client">
-                  </div>
-                  <div class="star d-inline-block">
-                    <ul>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                    </ul>
-                  </div>
-                  <h5 class="text-uppercase">
-                    Robert Stevens
-                  </h5>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum sit, pariatur et repudiandae nihil fugiat quam porro non eum.</p>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="testimony-item p-4">
-                  <div class="client-img">
-                    <img class="img-fluid" src="images/client-4.jpeg" alt="Client">
-                  </div>
-                  <div class="star d-inline-block">
-                    <ul>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                    </ul>
-                  </div>
-                  <h5 class="text-uppercase">
-                    Mark Sanders
-                  </h5>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum sit, pariatur et repudiandae nihil fugiat quam porro non eum.</p>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="testimony-item p-4">
-                  <div class="client-img">
-                    <img class="img-fluid" src="images/client-5.jpeg" alt="Client">
-                  </div>
-                  <div class="star d-inline-block">
-                    <ul>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                    </ul>
-                  </div>
-                  <h5 class="text-uppercase">
-                    Timothy Hudson
-                  </h5>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum sit, pariatur et repudiandae nihil fugiat quam porro non eum.</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Testimonial Ends -->
-
-    <!-- Contact Starts -->
-    <div id="contact">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="text-uppercase">
-            Contact
-            <span>stay connected</span>
-          </h2>
-        </div>
-        <div class="contact-inner">
-          <div class="row text-center">
-            <div class="col-12">
-              <div class="contact-address">
-                <div class="row">
-                  <div class="col-12 col-sm-4 col-md-4 col-lg-4">
-                    <i class="fas fa-map"></i>
-                    <h4 class="text-uppercase">
-                      address
-                    </h4>
-                    <p>
-                      Bijoynagar, Dhaka-1000
-                    </p>
-                  </div>
-                  <div class="col-12 col-sm-4 col-md-4 col-lg-4">
-                    <i class="far fa-envelope"></i>
-                    <h4 class="text-uppercase">
-                      email
-                    </h4>
-                    <p class="email">
-                      <a href="mailto:support@dominators.com">
-                        support@dominators.com
-                      </a>
-                    </p>
-                  </div>
-                  <div class="col-12 col-sm-4 col-md-4 col-lg-4">
-                    <i class="fas fa-phone phone"></i>
-                    <h4 class="text-uppercase">
-                      phone
-                    </h4>
-                    <p class="phone">
-                      <a href="tel:+8801959674710">
-                        +8801959674710
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="sec-details">
           <div class="row">
-            <div class="col-12">
-              <div class="contact-form">
-                <div class="row">
-                  <div class="col-6">
-                    <div class="form-name">
-                      <input type="text" name="name" id="name" placeholder="Name">
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="form-email">
-                      <input type="email" name="email" id="email" placeholder="Email">
-                    </div>
-                  </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <img class="about-img img-responsive" src="assets/img/about.jpg" alt="Mehedi">
+            </div>
+            <div class="about-text col-md-6 col-sm-12 col-xs-12 wow fadeInUp">
+              <h3 class="text-uppercase">a quick <span>bio</span></h3>
+              <p class="text-justify">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              </p>
+              <div class="load-more text-uppercase">
+                <a class="hvr-shutter-out-horizontal" href="#" title="Hire Me">Hire Me</a>
+                <a class="hvr-shutter-out-horizontal" href="#" title="Download cv">download cv</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="sec-heading text-center wow fadeInUp">
+        <h2 class="area-title">What I Do</h2>
+        <div class="separator"></div>
+      </div>
+      <div class="container">
+        <div class="services-details wow fadeInUp">
+          <div class="first row">
+            <div class="col-md-4">
+              <div class="single-item text-center">
+                <div class="single-item-header">
+                  <i class="fa fa-picture-o fa-3x" aria-hidden="true"></i>
+                  <h3>Graphic Design</h3>
                 </div>
-                <div class="row">
-                  <div class="col-12">
-                    <div class="contact-textarea">
-                      <textarea name="textbox" id="textbox" cols="30" rows="5" placeholder="Type Here. . "></textarea>
-                    </div>
-                  </div>
+                <div class="single-item-details">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </p>
                 </div>
-                <div class="row">
-                  <div class="col-12">
-                    <div class="form-button">
-                      <a href="#">Send Message</a>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="single-item text-center">
+                <div class="single-item-header">
+                  <i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+                  <h3>Web Design</h3>
+                </div>
+                <div class="single-item-details">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="single-item text-center">
+                <div class="single-item-header">
+                  <i class="fa fa-desktop fa-3x" aria-hidden="true"></i>
+                  <h3>Web Development</h3>
+                </div>
+                <div class="single-item-details">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="second row">
+            <div class="col-md-4">
+              <div class="single-item text-center">
+                <div class="single-item-header">
+                  <i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
+                  <h3>App Development</h3>
+                </div>
+                <div class="single-item-details">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="single-item text-center">
+                <div class="single-item-header">
+                  <i class="fa fa-line-chart fa-3x" aria-hidden="true"></i>
+                  <h3>SEO</h3>
+                </div>
+                <div class="single-item-details">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="single-item text-center">
+                <div class="single-item-header">
+                  <i class="fa fa-life-ring fa-3x" aria-hidden="true"></i>
+                  <h3>24/7 Support</h3>
+                </div>
+                <div class="single-item-details">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Contact Ends -->
+    </section>
+    <!-- Services -->
 
-    <!-- Footer Starts -->
+
+    <!-- Skill bar -->
+    <section class="skillbar wow fadeInUp">
+      <div class="container">
+        <div class="sec-heading text-center">
+          <h2 class="area-title">My Skills</h2>
+          <div class="separator"></div>
+        </div>
+
+        <div class="row skills">
+          <div class="col-md-4">
+            <div class="main-title">
+              <h2>Graphic Design</h2>
+            </div>
+            <div class="skill">
+              <div class="skill-title">
+                <h4>Photoshop</h4>
+              </div>
+              <div class="skill-main">
+                <div class="skill-bar photoshop" data-width="75"></div>
+                <div class="skill-value">75%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">
+                <h4>Illustrator</h4>
+              </div>
+              <div class="skill-main">
+                <div class="skill-bar illustrator" data-width="65"></div>
+                <div class="skill-value">65%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">
+                <h4>Indesign</h4>
+              </div>
+              <div class="skill-main">
+                <div class="skill-bar indesign" data-width="50"></div>
+                <div class="skill-value">50%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="main-title">
+              <h2>Web Design</h2>
+            </div>
+            <div class="skill">
+              <div class="skill-title">
+                <h4>HTML5</h4>
+              </div>
+              <div class="skill-main">
+                <div class="skill-bar html" data-width="90"></div>
+                <div class="skill-value">90%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">
+                <h4>CSS3</h4>
+              </div>
+              <div class="skill-main">
+                <div class="skill-bar css" data-width="85"></div>
+                <div class="skill-value">85%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">
+                <h4>Bootstrap</h4>
+              </div>
+              <div class="skill-main">
+                <div class="skill-bar bootstrap" data-width="80"></div>
+                <div class="skill-value">80%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="main-title">
+              <h2>Web Development</h2>
+            </div>
+            <div class="skill">
+              <div class="skill-title">
+                <h4>PHP</h4>
+              </div>
+              <div class="skill-main">
+                <div class="skill-bar php" data-width="75"></div>
+                <div class="skill-value">75%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">
+                <h4>Java</h4>
+              </div>
+              <div class="skill-main">
+                <div class="skill-bar java" data-width="65"></div>
+                <div class="skill-value">65%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">
+                <h4>MySql</h4>
+              </div>
+              <div class="skill-main">
+                <div class="skill-bar mysql" data-width="70"></div>
+                <div class="skill-value">70%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skill Bar -->
+
+
+    <!-- Isotope -->
+    <section class="works wow fadeInUp" id="works">
+      <div class="container">
+        <div class="sec-heading text-center">
+          <h2 class="area-title">My Works</h2>
+          <div class="separator"></div>
+        </div>
+
+        <div class="button-group filters-button-group text-uppercase wow fadeInUp">
+          <a class="button is-checked" data-filter="*">all</a>
+          <a class="button" data-filter=".graphic">graphic</a>
+          <a class="button" data-filter=".branding">branding</a>
+          <a class="button" data-filter=".design">design</a>
+          <a class="button" data-filter=".photography">photogrpahy</a>
+          <a class="button" data-filter=".development">development</a>
+        </div>
+
+        <div class="grid">
+
+
+          <div class="row wow fadeInUp">
+            <div class="col-md-4 col-sm-6 element-item photography graphic" data-category="photography">
+              <div class="work-item">
+                <div class="work-thumbnail">
+                  <img src="assets/img/work1.jpg" alt="Work">
+                </div>
+                <div class="work-des">
+                  <h4>Project Title</h4>
+                  <a href="#" title="">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 element-item branding development " data-category="branding">
+              <div class="work-item">
+                <div class="work-thumbnail">
+                  <img src="assets/img/work2.jpg" alt="Work">
+                </div>
+                <div class="work-des">
+                  <h4>Project Title</h4>
+                  <a href="#" title="">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 element-item photography graphic " data-category="photography">
+              <div class="work-item">
+                <div class="work-thumbnail">
+                  <img src="assets/img/work3.jpg" alt="Work">
+                </div>
+                <div class="work-des">
+                  <h4>Project Title</h4>
+                  <a href="#" title="">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 col-sm-6 element-item branding graphic " data-category="post-transition">
+              <div class="work-item">
+                <div class="work-thumbnail">
+                  <img src="assets/img/work4.jpg" alt="Work">
+                </div>
+                <div class="work-des">
+                  <h4>Project Title</h4>
+                  <a href="#" title="">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 element-item design graphic photography " data-category="transition">
+              <div class="work-item">
+                <div class="work-thumbnail">
+                  <img src="assets/img/work5.jpg" alt="Work">
+                </div>
+                <div class="work-des">
+                  <h4>Project Title</h4>
+                  <a href="#" title="">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 element-item design graphic development " data-category="design">
+              <div class="work-item">
+                <div class="work-thumbnail">
+                  <img src="assets/img/work6.jpeg" alt="Work">
+                </div>
+                <div class="work-des">
+                  <h4>Project Title</h4>
+                  <a href="#" title="">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-more">
+          <a class="hvr-shutter-out-horizontal" href="#" title="View More">View More</a>
+        </div>
+
+      </div>
+    </section>
+    <!-- Works -->
+
+
+    <!-- Testimonial -->
+    <section class="testimonial wow fadeInUp" id="testimonial">
+      <div class="container">
+        
+        <div class="owl-carousel">
+
+          <div>
+            <div class="testimonial-icon">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="testimonial-comment">
+              <p class="testimonial-comment-main">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of lettersIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+              <h3 class="testimonial-comment-name">Jonathan Doe</h3>
+              <p class="testimonial-comment-pos">-CEO</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonial-icon">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="testimonial-comment">
+              <p class="testimonial-comment-main">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+              <h3 class="testimonial-comment-name">Brett Doe</h3>
+              <p class="testimonial-comment-pos">-MD</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonial-icon">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="testimonial-comment">
+              <p class="testimonial-comment-main">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of lettersIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+              <h3 class="testimonial-comment-name">Jonathan lee</h3>
+              <p class="testimonial-comment-pos">-MANAGER</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonial-icon">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="testimonial-comment">
+              <p class="testimonial-comment-main">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of lettersIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+              <h3 class="testimonial-comment-name">John Doe</h3>
+              <p class="testimonial-comment-pos">-Client</p>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+    <!-- Testimonial -->
+
+
+    <!-- Contact -->
+    <section class="contact wow fadeInUp" id="contact">
+      <div class="container">
+        <div class="sec-heading text-center">
+          <h2 class="area-title">Contact</h2>
+          <div class="separator"></div>
+        </div>
+        
+        <form class="contact-form" action="index_submit" method="get" accept-charset="utf-8">
+          
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder="Name" required="required">
+          </div>
+
+          <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Email" required="required">
+          </div>
+
+          <div class="form-group">
+            <textarea rows="5" name="message" class="form-control" placeholder="Message" required="required"></textarea>
+          </div>
+
+          <button class="hvr-shutter-out-horizontal" type="submit">Send Message</button>
+
+        </form>
+
+      </div>
+    </section>
+    <!-- Contact -->
+
+
+    <!-- Footer -->
     <footer>
-      <div class="container">
-        <div class="footer">
-          <div class="row">
-            <div class="col-12">
-              <p>
-                Stacks @2019 All Rights Reserved.
-              </p>
-            </div>
-          </div>
+      <div class="container wow fadeInUp">
+        <div class="footer-icons">
+
+          <a href="#" title="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+
+          <a href="#" title="Twitter">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+
+          <a href="#" title="Google+">
+            <i class="fab fa-google-plus-square"></i>
+          </a>
+
+          <a href="#" title="Pinterest">
+            <i class="fab fa-pinterest-square"></i>
+          </a>
+
+        </div>
+        <div class="footer-text">
+          <p>Copyright &copy; Mahmudur Rahman 2018, All rights Reserved.</p>
         </div>
       </div>
     </footer>
-    <!-- Footer Ends -->
+    <!-- Footer -->
 
 
+    <!-- Scroll To Top -->
+    <div class="scrolltotop hide wow fadeInUp">
+      <a href="#" title="Top">
+        <i class="fas fa-angle-up"></i>
+      </a>
+    </div>
+    <!-- Scroll To Top -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/smooth-scroll.polyfills.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootsnav -->
+    <script src="assets/js/bootsnav.js"></script>
+    <!-- Particles -->
+    <script src="assets/js/particles.min.js"></script>
+    <!-- App.js -->
+    <script src="assets/js/app.js"></script>
+    <!-- TypeWritter -->
+    <script src="assets/js/typed.js"></script>
+    <!-- SmoothScroll -->
+    <script src="assets/js/smooth-scroll.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Appear.js -->
+    <script src="assets/js/appear.js"></script>
+    <!-- OwlCarousel -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- WOW -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
